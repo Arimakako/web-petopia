@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f9fa; /* Light background for the entire page */
+}
+
+h3.text-center {
+  background-color: #343a40; /* Dark gray background */
+  color: #ffffff; /* White text */
+  font-size: 28px; /* Larger font size */
+  border-radius: 5px; /* Slight rounding of corners */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.bg-light {
+  background-color: #ffffff; /* Pure white background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+}
+
+.btn-dark {
+  background-color: #343a40; /* Matching button color with heading */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #495057; /* Slightly lighter shade on hover */
+  color: #ffffff; /* Ensure white text on hover */
+}
+
+.container {
+  max-width: 900px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+.container img {
+  border-radius: 10px; /* Round the corners of the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Image shadow */
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #343a40; /* Dark text color for labels */
+  font-size: 16px;
+}
+
+.form-control {
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #495057;
+  background-color: #ffffff; /* White background for inputs */
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #22668D; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(34, 102, 141, 0.5); /* Soft blue glow on focus */
+}
+
+.text-danger {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+textarea.form-control {
+  resize: none; /* Disable resizing of the textarea */
+}
+
+p.mb-3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #22668D; /* Blue color for the thumbnail text */
+}

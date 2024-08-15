@@ -1,0 +1,58 @@
+<h3 routerLink="postService()" class="text-center bg-success text-black p-3">Create a service</h3>
+
+<div class="container bg-light p-2">
+  <table class="table">
+    <tr>
+      <td>Service type:</td>
+      <td>
+        <!-- Trong template của component.html -->
+        <select class="form-control" [(ngModel)]="service.servicetype">
+            <option value="" disabled selected> Chọn loại dịch vụ </option>
+            <option *ngFor="let option of dropdownOptions" [value]="option">{{ option }}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Service Name:</td>
+      <td>
+        <input type="text" class="form-control" #name="ngModel" name="name" id="name" placeholder="Nhập tên dịch vụ" [(ngModel)]="service.name" />
+      </td>
+    </tr>
+    <tr>
+      <td>Service Detail:</td>
+      <td>
+        <input type="text" class="form-control" #name="ngModel" name="detail" id="detail"
+            placeholder="Nhập mô tả" [(ngModel)]="service.des" />
+      </td>
+    </tr>
+    <tr>
+        <td>Service Price:</td>
+        <td>
+          <input type="text" class="form-control" #name="ngModel" name="price" id="price"
+            placeholder="Nhập giá tiền" [(ngModel)]="service.price" />
+        </td>
+    </tr>
+    <tr>
+      <td>Service Image:</td>
+      <td>
+        <input type="file" class="file-input" #name="ngModel" name="image" id="image"
+          [(ngModel)]="service.img" (change)="onFileSelected($event,service)" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button class="btn btn-dark active w-100 my-2 rounded-4" (click)="cancel()">Cancel</button>
+      </td>
+      <td>
+        <button class="btn btn-success w-100 my-2 active rounded-4" (click)="postService()">Submit</button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="container">
+  <p>
+    {{errMessage}}
+  </p>
+</div>
+

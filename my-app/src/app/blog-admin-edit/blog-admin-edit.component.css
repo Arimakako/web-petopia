@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+  .bg-color {
+    background: #22668d;
+  }
+
+  .text-color {
+    color: #ffcc70;
+  }
+
+  .table thead th {
+    border: none;
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+
+  .img-fluid {
+    object-fit: cover;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+  }
+
+  .btn-warning {
+    background-color: #ffcc70;
+    border-color: #ffcc70;
+    color: #22668d;
+  }
+
+  .btn-warning:hover {
+    background-color: #ffbb50;
+    border-color: #ffbb50;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+
+  .featured-section {
+    background-color: #f8f9fa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .table td,
+  .table th {
+    vertical-align: middle;
+  }

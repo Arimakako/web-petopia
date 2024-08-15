@@ -1,0 +1,52 @@
+<section class="featured-section py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <h2 class="text-color">All Petopia Posts</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-12">
+        <div class="table-responsive">
+          <table class="table table-hover table-striped border-0">
+            <thead>
+              <tr class="bg-color text-white text-center">
+                <th>Blog Id</th>
+                <th>Blog Title</th>
+                <th>Post Date</th>
+                <th>Description</th>
+                <th>First Tag</th>
+                <th>Second Tag</th>
+                <th>Third Tag</th>
+                <th>Detail</th>
+                <th>Type</th>
+                <th>Thumbnail</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center align-middle" *ngFor="let blog of blogs">
+                <td>{{blog._id}}</td>
+                <td>{{blog.title}}</td>
+                <td>{{blog.date}}</td>
+                <td>{{blog.des}}</td>
+                <td>{{blog.tag1}}</td>
+                <td>{{blog.tag2}}</td>
+                <td>{{blog.tag3}}</td>
+                <td>{{blog.content}}</td>
+                <td>{{blog.cate}}</td>
+                <td>
+                  <img src="{{blog.img}}" class="img-fluid rounded" width="100px" height="100px">
+                </td>
+                <td>
+                  <button class="btn btn-secondary btn-sm w-100 m-1" (click)="updateBlog(blog._id)">Edit</button>
+                  <button class="btn btn-warning btn-sm w-100 m-1" (click)="deleteBlog(blog._id)">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

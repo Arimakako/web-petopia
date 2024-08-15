@@ -1,0 +1,66 @@
+<h3 class="text-center bg-success text-white p-3 rounded">Create a Product</h3>
+
+<div class="container bg-light p-4 rounded shadow-sm">
+  <form>
+    <div class="mb-3 row">
+      <label for="type" class="col-sm-3 col-form-label">Product Type:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="type" placeholder="Enter pet type"
+          [(ngModel)]="product.pettype" />
+      </div>
+    </div>
+    
+    <div class="mb-3 row">
+      <label for="name" class="col-sm-3 col-form-label">Product Name:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="name" placeholder="Enter product name"
+          [(ngModel)]="product.name" />
+      </div>
+    </div>
+    
+    <div class="mb-3 row">
+      <label for="detail" class="col-sm-3 col-form-label">Product Detail:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="detail" placeholder="Enter product details"
+          [(ngModel)]="product.des" />
+      </div>
+    </div>
+    
+    <div class="mb-3 row">
+      <label for="price" class="col-sm-3 col-form-label">Product Price:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="price" placeholder="Enter product price"
+          [(ngModel)]="product.price" />
+      </div>
+    </div>
+    
+    <div class="mb-3 row">
+      <label for="category" class="col-sm-3 col-form-label">Product Category:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="category" placeholder="Enter product category"
+          [(ngModel)]="product.cate" />
+      </div>
+    </div>
+    
+    <div class="mb-3 row">
+      <label for="image" class="col-sm-3 col-form-label">Product Image:</label>
+      <div class="col-sm-9">
+        <input type="file" class="form-control-file" id="image"
+          [(ngModel)]="product.img" (change)="onFileSelected($event, product)" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <button type="button" class="btn btn-secondary w-100 rounded-pill" (click)="cancel()">Cancel</button>
+      </div>
+      <div class="col-sm-6">
+        <button type="submit" class="btn btn-success w-100 rounded-pill" (click)="postProduct()">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container mt-3">
+  <p class="text-danger">{{errMessage}}</p>
+</div>

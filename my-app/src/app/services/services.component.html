@@ -1,0 +1,78 @@
+<div class="image-container">
+  <img src="./assets/images/services_img/h9.png" alt="Hình 1">
+</div>
+<div class="slide-wrapper">
+  <div class="slide-1">
+    <div class="left-image">
+      <div class="divider"></div>
+      <h3>Spa Services</h3>
+      <img class="custom-image1" src="./assets/images/services_img/h1.png" alt="Hình ảnh">
+      <p style="text-align: center;">Pamper your pet with our exceptional spa services.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="arrow-left">
+      <img src="./assets/images/services_img/h10.png" id="leftArrow">
+    </div>
+  </div>
+  <div class="slider">
+    <div class="slider-container">
+      <div class="element" *ngFor="let service of services">
+        <div class="rectangle2">
+          <img class="custom-image2" src="{{service.img}}" id="img1">
+          <div class="sv1" id="tt1">{{service.name}}</div>
+          <div class="rectangle2b" (click)="detailService(service._id)">See more</div>
+        </div>
+        <div class="price">{{service.price}} VND</div>
+      </div>
+    </div>
+  </div>
+  <div class="arrow-right">
+    <img src="./assets/images/services_img/h10.png" id="leftArrow">
+  </div>
+</div>
+
+<div class="divider2"></div>
+<table class="table2">
+  <tr>
+    <td>
+      <img src="./assets/images/services_img/h11.jfif">
+    </td>
+    <td>
+      <img src="./assets/images/services_img/h12.jfif">
+    </td>
+    <td>
+      <img src="./assets/images/services_img/h13.jfif">
+    </td>
+  </tr>
+</table>
+<div class="divider2"></div>
+
+<div class="slide-wrapper">
+  <div class="slide-1">
+    <div class="arrow-left">
+      <img src="./assets/images/services_img/h10.png" id="leftArrow">
+    </div>
+  </div>
+  <div class="slider">
+    <div class="slider-container">
+      <div class="element" *ngFor="let service of services">
+        <div class="rectangle2">
+          <img class="custom-image2" src="{{service.img}}" id="img1">
+          <div class="sv1" id="tt1">{{service.name}}</div>
+          <div class="rectangle2b" (click)="detailService(service._id)">See more</div>
+        </div>
+        <div class="price">{{service.price}} VND</div>
+      </div>
+    </div>
+  </div>
+  <div class="arrow-right">
+    <img src="./assets/images/services_img/h10.png" id="leftArrow">
+  </div>
+  <div class="right-image">
+    <div class="divider"></div>
+    <h3>Hotel Services</h3>
+    <img class="custom-image1" src="./assets/images/services_img/h5.png" alt="Hình ảnh">
+    <p style="text-align: center;">Give your pet a luxurious stay at our premier pet hotel.</p>
+    <div class="divider"></div>
+  </div>
+</div>

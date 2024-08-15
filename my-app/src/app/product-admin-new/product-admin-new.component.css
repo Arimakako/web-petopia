@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+h3.text-center {
+  background-color: #28a745; /* Green background for heading */
+  color: #ffffff; /* White text */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px; /* Limit the width of the form */
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for form */
+}
+
+.form-control, .form-control-file {
+  border-radius: 5px; /* Rounded input fields */
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ced4da; /* Light gray border */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-control-file:focus {
+  border-color: #28a745; /* Green border on focus */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3); /* Soft green glow on focus */
+}
+
+.btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.text-danger {
+  font-weight: bold;
+  font-size: 16px;
+}

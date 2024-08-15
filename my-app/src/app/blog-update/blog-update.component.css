@@ -1,0 +1,26 @@
+.bg-warning {
+    background-color: #f39c12 !important;
+  }
+
+  .btn-danger, .btn-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .form-control-file {
+    border: none;
+    padding: 0;
+  }
+
+  .img-thumbnail {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container.bg-light {
+    background-color: #ffffff !important;
+  }
+
+  .form-group label {
+    font-weight: bold;
+  }

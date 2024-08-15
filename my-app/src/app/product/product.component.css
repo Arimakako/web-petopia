@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.main-container {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  background-image: url('../../assets/images/mainproduct_img/Allcombined.png');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 700px;
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto; /* Center the main container */
+}
+
+.custom-width {
+  width: 100%;
+}
+
+.content-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: #22668D;
+  font-size: 48px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #22668D;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  background: #22668D;
+  border-radius: 19px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button-container a {
+  color: #F2DBDB;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.product-category {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.container-category {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(238, 236, 224, 0.47);
+  border-radius: 37px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 236, 224, 0.47);
+  border-radius: 37px;
+  z-index: 1;
+}
+
+.label-container {
+  background: #22668D;
+  border-radius: 19px;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.label-content {
+  color: #F2DBDB;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.icon-bar img {
+  width: 100%;
+  max-width: 1550px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+}

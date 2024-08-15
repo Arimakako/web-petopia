@@ -1,0 +1,42 @@
+<div class="p-2">
+  <button class="bg-color text-white btn" (click)="createProduct()">Create New</button>
+</div>
+
+<div *ngIf="errMessage" class="alert alert-danger">
+  {{ errMessage }}
+</div>
+
+<div class="table-responsive w-100">
+  <table class="table table-hover table-bordered text-center">
+    <thead class="bg-warning text-black">
+      <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Product Description</th>
+        <th>Product Image</th>
+        <th>Category</th>
+        <th>Pet Type</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product._id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.des }}</td>
+        <td>
+          <img [src]="product.img" alt="{{ product.name }}" class="img-thumbnail" width="150" height="150">
+        </td>
+        <td>{{ product.cate }}</td>
+        <td>{{ product.pettype }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm m-1" (click)="detailProduct(product._id)">Detail</button>
+          <button class="btn btn-secondary btn-sm m-1" (click)="updateProduct(product._id)">Edit</button>
+          <button class="btn btn-warning btn-sm m-1" (click)="deleteProduct(product._id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

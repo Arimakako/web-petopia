@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.bg-color {
+  background: #22668D;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bg-color:hover {
+  background: #1a4f7c;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.img-thumbnail {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.alert {
+  margin-bottom: 20px;
+}

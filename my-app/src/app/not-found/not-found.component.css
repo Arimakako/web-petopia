@@ -1,0 +1,38 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #FFFADD;
+  padding: 20px;
+  text-align: center;
+}
+
+.not-found-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #FFCC70;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #8ECDDD;
+  font-size: 1.5em;
+  max-width: 600px;
+}
+
+a {
+  color: #22668D;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}

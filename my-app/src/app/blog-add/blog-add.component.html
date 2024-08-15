@@ -1,0 +1,72 @@
+<h3 class="text-center bg-color text-color p-3">Create a new content</h3>
+
+<div class="container bg-light p-2">
+  <table class="table">
+    <tr>
+      <td>Category:</td>
+      <td>
+        <input type="text" class="form-control" name="type" id="type" placeholder="Nhập thể loại" [(ngModel)]="blog.cate" />
+      </td>
+    </tr>
+    <tr>
+      <td>Title:</td>
+      <td>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Nhập tên sản phẩm" [(ngModel)]="blog.title" />
+      </td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td>
+        <input type="text" class="form-control" name="description" id="description" placeholder="Tóm tắt bài viết" [(ngModel)]="blog.des" />
+      </td>
+    </tr>
+    <tr>
+      <td>Date:</td>
+      <td>
+        <input type="text" class="form-control" name="date" id="date" placeholder="Nhập ngày post bài" [(ngModel)]="blog.date" />
+      </td>
+    </tr>
+    <tr>
+      <td>First Hashtag:</td>
+      <td>
+        <input type="text" class="form-control" name="tag1" id="tag1" placeholder="Điền hashtag đầu tiên" [(ngModel)]="blog.tag1" />
+      </td>
+    </tr>
+    <tr>
+      <td>Second Hashtag:</td>
+      <td>
+        <input type="text" class="form-control" name="tag2" id="tag2" placeholder="Điền hashtag thứ 2" [(ngModel)]="blog.tag2" />
+      </td>
+    </tr>
+    <tr>
+      <td>Third Hashtag:</td>
+      <td>
+        <input type="text" class="form-control" name="tag3" id="tag3" placeholder="Điền hashtag thứ 3" [(ngModel)]="blog.tag3" />
+      </td>
+    </tr>
+    <tr>
+      <td>Thumbnail:</td>
+      <td>
+        <input type="file" class="file-input" name="image" id="image" (change)="onFileSelected($event, blog)" />
+      </td>
+    </tr>
+    <tr>
+      <td>Content:</td>
+      <td>
+        <angular-editor [(ngModel)]="blog.content" name="content"></angular-editor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button class="btn btn-dark active w-100 my-2 rounded-4" (click)="cancel()">Cancel</button>
+      </td>
+      <td>
+        <button class="btn bg-color text-white w-100 my-2 active rounded-4" (click)="postBlog()">Submit</button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="container">
+  <p>{{errMessage}}</p>
+</div>

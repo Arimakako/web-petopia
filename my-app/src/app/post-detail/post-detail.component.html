@@ -1,0 +1,23 @@
+<div class="col-lg-12 d-flex justify-content-end mb-3">
+    <button class="btn btn-color" (click)="goBack()">Back</button>
+  </div>
+  
+  <div class="container">
+    <h3 class="text-center text-color">{{blog.title}}</h3>
+  </div>
+  
+  <div class="container my-4">
+    <table class="table">
+      <tr>
+        <td class="align-middle">{{blog.content}}</td>
+        <td class="text-center">
+          <img src="https://t4.ftcdn.net/jpg/06/10/13/27/360_F_610132710_9M0fM6ggD6Z38yfNdPWQ9w3j6uCOZ54y.jpg" class="img-fluid" alt="Blog Image">
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="text-center my-3">
+    <strong>Topic:</strong> {{blog.tag1}}, {{blog.tag2}}, {{blog.tag3}}
+  </div>
+  

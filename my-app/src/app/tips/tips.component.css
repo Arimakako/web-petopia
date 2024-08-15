@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h2.text-color {
+    color: #FFCC70;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h5.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.badge {
+    padding: 0.5em 0.75em;
+    border-radius: 5px;
+}
+
+.featured-section {
+    padding: 3rem 0;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    color: #22668D;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover, .pagination a.active {
+    background-color: #22668D;
+    color: #ffffff;
+}
+
+/* Additional Styles */
+.text-color {
+    color: #FFCC70;
+}
+
+.bg-color {
+    background: #22668D;
+}
+
+.menu-bar {
+    background-color: #8ECDDD;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #3195d8;
+}
+
+.menu-item a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid black;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divider {
+    height: 2px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-link {
+    color: black;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: purple;
+    font-weight: bold;
+}

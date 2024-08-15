@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.footer-section {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #FFFADD;
+}
+
+.following-infor {
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+.following-infor.subscription {
+    text-align: left;
+}
+
+.following-infor.contact {
+    text-align: left;
+    margin-top: 40px;
+}
+
+h1, h2 {
+    margin: 0;
+    color: rgb(34, 102, 141);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.register-button {
+    background-color: rgb(34, 102, 141);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #2a7ba1;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+td {
+    vertical-align: top;
+    padding: 10px 20px;
+}
+
+td h2 {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(34, 102, 141);
+}
+
+a:hover {
+    color: #FFCC70;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .following-infor {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .following-infor.contact td {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .register-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.bg-light {
+  background-color: #ffffff; /* White background for the main container */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h3.text-center {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.d-flex .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #dc3545;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.container img {
+  border-radius: 10px; /* Rounded image corners */
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 5px; /* Rounded input corners */
+  padding: 10px;
+  border: 1px solid #ced4da; /* Light gray border */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0069d9; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 105, 217, 0.3); /* Blue glow on focus */
+}
+
+textarea.form-control {
+  resize: none; /* Disable resizing */
+}
+
+.text-danger {
+  font-weight: bold;
+  font-size: 16px;
+}
